@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+body {
+    font-family: "Open Sans";
+    font-size: 16px;
+    line-height: 1.5;
+
+    background-color: rgb(53, 38, 38);
+    color:blanchedalmond;
+    margin: 10px auto 300px auto;
+    max-width: 900px;
+
+    transition: background-color 1s;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    overflow: hidden;
+    padding: 40px;
+    transition: top 2s;
+}
+
+header.hide {
+    top: -100px;
+}
+
+h1 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:300;
+    float: left;
+    font-weight: 700;
+}
+
+nav {
+    float: right;
+    width: 250px;
+}
+
+nav a {
+    color:blanchedalmond;
+    text-decoration: none;
+    margin: 0 0 0 15px;
+}
+
+nav a:hover {
+    border-bottom: 1px solid #8a572d;
+}
+
+section {
+    padding: 100px 0 100px 0;
+}
+
+section img {
+    width: 900px;
+    height: 600px;
+
+    transition: height 0.5s, width 0.5s;
+}
+
+div.progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    font-size: 12px;
+}
+
+div.progress div.bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background-color:blanchedalmond;
+}
+
+@media (max-width: 900px) {
+    section img {
+        width: 800px;
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    section img {
+        width: 450px;
+        height: auto;
+    }
+}
